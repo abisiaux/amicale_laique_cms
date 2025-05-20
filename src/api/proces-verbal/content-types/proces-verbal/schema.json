@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "proces_verbaux",
+  "info": {
+    "singularName": "proces-verbal",
+    "pluralName": "proces-verbaux",
+    "displayName": "ProcesVerbal",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "compte_rendu": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "files"
+      ]
+    },
+    "titre": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

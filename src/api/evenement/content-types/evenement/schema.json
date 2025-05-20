@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "evenements",
+  "info": {
+    "singularName": "evenement",
+    "pluralName": "evenements",
+    "displayName": "Evenement",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "titre": {
+      "type": "string",
+      "required": true
+    },
+    "thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "date_heure_debut": {
+      "type": "datetime"
+    },
+    "date_heure_fin": {
+      "type": "datetime"
+    },
+    "lieu": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks",
+      "required": true
+    },
+    "actualite": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::actualite.actualite"
+    }
+  }
+}
