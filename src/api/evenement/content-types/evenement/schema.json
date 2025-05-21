@@ -33,14 +33,14 @@
     "lieu": {
       "type": "string"
     },
-    "description": {
-      "type": "blocks",
-      "required": true
-    },
     "actualite": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::actualite.actualite"
+    },
+    "description": {
+      "type": "text",
+      "required": true
     }
   }
 }
