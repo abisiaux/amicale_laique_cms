@@ -10,7 +10,7 @@ export default () => {
         ctx.set("Cache-Control", "public, max-age=300"); // 5 minutes
       }
       if (ctx.url.startsWith("/api/membres")) {
-        ctx.set("Cache-Control", "public, max-age=86400"); // 24 heures
+        ctx.set("Cache-Control", "public, max-age=604800"); // 1 semaine
       }
       if (ctx.url.startsWith("/api/actualites/")) {
         ctx.set("Cache-Control", "public, max-age=900"); // 15 minutes
