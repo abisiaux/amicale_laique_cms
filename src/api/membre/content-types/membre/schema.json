@@ -9,6 +9,7 @@
   "options": {
     "draftAndPublish": true
   },
+  "pluginOptions": {},
   "attributes": {
     "nom": {
       "type": "string",
@@ -23,12 +24,17 @@
       "required": true
     },
     "photo": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "position": {
+      "type": "integer",
+      "required": true,
+      "unique": true
     }
   }
 }
